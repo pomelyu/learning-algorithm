@@ -40,19 +40,16 @@ def test_tree_insert():
     assert tree_root.left == node_1
     assert tree_root.right == node_2
 
-@pytest.mark.skip(reason=REASON_TODO)
 def test_pre_order_traverse(demo_tree):
     output = demo_tree.pre_order_traverse()
 
     assert output == [0, 1, 3, 4, 2, 5, 6]
 
-@pytest.mark.skip(reason=REASON_TODO)
 def test_in_order_traverse(demo_tree):
     output = demo_tree.in_order_traverse()
 
     assert output == [3, 4, 1, 0, 5, 2, 6]
 
-@pytest.mark.skip(reason=REASON_TODO)
 def test_post_order_traverse(demo_tree):
     output = demo_tree.post_order_traverse()
 

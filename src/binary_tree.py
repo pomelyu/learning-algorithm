@@ -23,13 +23,46 @@ class BinaryTree():
         return tree_node
 
     def pre_order_traverse(self):
-        # TODO:
-        pass
+        root = self.get_root()
+        stack = [root]
+        output = []
+        while len(stack) != 0:
+            node = stack.pop()
+            output.append(node.val)
+            if node.right:
+                stack.append(node.right)
+            if node.left:
+                stack.append(node.left)
+
+        return output
+
     
     def in_order_traverse(self):
-        # TODO:
-        pass
+        root = self.get_root()
+        stack = []
+        ptr = root
+        output = []
+        while len(stack) != 0 or ptr:
+            while ptr:
+                stack.append(ptr)
+                ptr = ptr.left
+            ptr = stack.pop()
+            output.append(ptr.val)
+            ptr = ptr.right
+
+        return output
 
     def post_order_traverse(self):
-        # TODO:
-        pass
+        root = self.get_root()
+        stack = []
+        ptr = root
+        output = []
+        while len(stack) != 0 or ptr:
+            while ptr:
+                stack.append(ptr)
+                ptr = ptr.right
+            ptr = stack.pop()
+            output.append(ptr.val)
+            ptr = ptr.left
+
+        return output
