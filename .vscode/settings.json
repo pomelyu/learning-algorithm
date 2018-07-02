@@ -1,0 +1,16 @@
+{
+  "editor.fontSize": 13,
+  "editor.tabSize": 4,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Tomorrow Night Eighties (Sublime)",
+  "evermonkey.token": "S=s251:U=1dfdbd8:E=162e8a25765:C=15b90f12b00:P=1cd:A=en-devtoken:V=2:H=faef8eccf01e2d9f9dd41aa82b5ed80f",
+  "evermonkey.noteStoreUrl": "https://www.evernote.com/shard/s251/notestore",
+  "evermonkey.attachmentsFolder": "/Volumes/Data/Google Drive/!-MacBook/Note/download",
+  "evermonkey.uploadFolder": "/Volumes/Data/Google Drive/!-MacBook/Note/upload",
+  "[markdown]": {
+      "editor.quickSuggestions": true
+  },
+  "workbench.statusBar.visible": true,
+  "files.eol": "\n",
+  "window.zoomLevel": 0,
+}
