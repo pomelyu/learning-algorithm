@@ -53,4 +53,4 @@ def test_in_order_traverse(demo_tree):
 def test_post_order_traverse(demo_tree):
     output = demo_tree.post_order_traverse()
 
-    assert output == [6, 2, 5, 0, 1, 4, 3]
+    assert output == [4, 3, 1, 5, 6, 2, 0]
