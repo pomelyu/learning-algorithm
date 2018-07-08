@@ -53,13 +53,16 @@ class BinaryTree():
         return output
 
     def post_order_traverse(self):
-        return self.post_order_traverse_recursive(self.get_root())
-    
-    def post_order_traverse_recursive(self, node):
-        if not node:
-            return []
+        root = self.get_root()
+        stack = [root]
+        output = []
+        while len(stack) != 0:
+            node = stack.pop()
+            output.append(node.val)
+            if node.left:
+                stack.append(node.left)
+            if node.right:
+                stack.append(node.right)
 
-        left_order = self.post_order_traverse_recursive(node.left)
-        right_order = self.post_order_traverse_recursive(node.right)
-        return left_order + right_order + [node.val]
+        return output[::-1]
         
