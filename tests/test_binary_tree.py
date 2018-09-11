@@ -1,11 +1,11 @@
 import pytest
 
-from src.binary_tree import BinaryTree
+from .context import algo
 from .reasons import REASON_TODO
 
 @pytest.fixture
 def demo_tree():
-    tree = BinaryTree(0)
+    tree = algo.BinaryTree(0)
     tree_root = tree.get_root()
 
     node_1 = tree.insert_left(tree_root, 1)
@@ -20,7 +20,7 @@ def demo_tree():
 
 def test_tree_init():
     root_val = 0
-    tree = BinaryTree(root_val)
+    tree = algo.BinaryTree(root_val)
     tree_root = tree.get_root()
 
     assert tree_root.val == root_val
@@ -29,7 +29,7 @@ def test_tree_init():
 
 def test_tree_insert():
     root_val = 0
-    tree = BinaryTree(root_val)
+    tree = algo.BinaryTree(root_val)
     tree_root = tree.get_root()
 
     node_1 = tree.insert_left(tree_root, 1)
